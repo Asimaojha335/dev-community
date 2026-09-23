@@ -1,0 +1,22 @@
+:root { --h: 42; }
+.tag { border: 1px solid var(--border); background: var(--surface-2); color: var(--accent-strong); padding: 0.12rem 0.55rem; border-radius: 6px; font-size: 0.78rem; font-weight: 600; cursor: pointer; }
+.tag.on { background: var(--accent-soft); border-color: var(--accent); }
+.link { background: none; border: 0; color: var(--accent-strong); cursor: pointer; padding: 0 0.3rem; font: inherit; font-size: 0.8rem; }
+.stats { display: grid; justify-items: center; min-width: 64px; text-align: center; line-height: 1.15; }
+.stats b { font-size: 1.15rem; } .stats span { font-size: 0.7rem; color: var(--muted); margin-bottom: 0.35rem; } .stats b.ok { color: var(--ok); }
+.vote { display: grid; justify-items: center; gap: 0.15rem; }
+.vote button { border: 1px solid var(--border); background: var(--surface); color: var(--muted); width: 32px; height: 28px; border-radius: 8px; cursor: pointer; }
+.vote button.on { background: var(--accent-soft); color: var(--accent-strong); border-color: var(--accent); }
+.vote button:disabled { opacity: 0.4; cursor: not-allowed; }
+.card.accepted { border-color: var(--ok); }
+.md { line-height: 1.6; overflow-wrap: anywhere; } .md p { margin: 0 0 0.6rem; } .md h2, .md h3, .md h4 { margin: 0.8rem 0 0.4rem; }
+.md pre { position: relative; background: #0b1020; color: #e5e9f5; padding: 0.85rem 1rem; border-radius: 10px; overflow-x: auto; font-size: 0.85rem; margin: 0 0 0.7rem; }
+.md pre .lang { position: absolute; right: 0.6rem; top: 0.3rem; font-size: 0.65rem; color: #94a3b8; text-transform: uppercase; }
+.ic { font-family: var(--mono); background: var(--surface-2); border: 1px solid var(--border); border-radius: 5px; padding: 0.05rem 0.35rem; font-size: 0.85em; }
+.play-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem; align-items: start; }
+@media (max-width: 900px) { .play-grid { grid-template-columns: 1fr; } }
+.code { width: 100%; min-height: 380px; resize: vertical; background: #0b1020; color: #e5e9f5; border: 1px solid var(--border); border-radius: 10px; padding: 0.8rem; font-family: var(--mono); font-size: 0.86rem; line-height: 1.55; tab-size: 2; }
+.preview-frame { width: 100%; height: 300px; border: 1px solid var(--border); border-radius: 10px; background: #fff; }
+.console { background: #0b1020; color: #cbd5e1; border-radius: 10px; padding: 0.6rem 0.8rem; min-height: 90px; max-height: 180px; overflow: auto; white-space: pre-wrap; }
+.console .error { color: #fca5a5; } .console .warn { color: #fcd34d; }
+@media (max-width: 760px) { .grid[style*="220px"] { grid-template-columns: 1fr !important; } }
